@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lector de Sonetos - IPO</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Biblioteca de Sonetos</h1>
+    
+    <div class="buscador-wrapper">
+      <label for="input-buscador" class="buscador__label">Busca por título o autor:</label>
+      
+      <div class="buscador__input-container">
+        <input type="text" id="input-buscador" class="buscador__input" placeholder="Ej: Quevedo, Garcilaso, nariz..." autocomplete="off">
+        <!-- Botón X (oculto por defecto) -->
+        <button id="btn-limpiar" class="buscador__limpiar oculto" aria-label="Borrar búsqueda">&times;</button>
+      </div>
+
+      <ul id="lista-sugerencias" class="buscador__sugerencias oculto"></ul>
+    </div>
+  </header>
+
+  <main id="soneto-container" class="main-container" aria-live="polite">
+    <!-- El soneto dinámico se renderizará aquí -->
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Lector de Sonetos - Proyecto IPO de la India.</p>
+  </footer>
+</body>
+</html>
